@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := maple
+PRODUCT_RELEASE_NAME := lilac
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -31,7 +31,7 @@ PRODUCT_COPY_FILES += \
 
 # Keylayout
 PRODUCT_COPY_FILES += \
-    device/sony/maple/gpio-keys.kl:recovery/root/system/usr/keylayout/gpio-keys.kl
+    device/sony/lilac/gpio-keys.kl:recovery/root/system/usr/keylayout/gpio-keys.kl
 
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.usb.pid_suffix=1F1 \
@@ -41,8 +41,8 @@ PRODUCT_PROPERTY_OVERRIDES := \
 
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := maple
-PRODUCT_NAME := omni_maple
+PRODUCT_DEVICE := lilac
+PRODUCT_NAME := omni_lilac
 PRODUCT_BRAND := Sony
 PRODUCT_MODEL := Xperia XZ Premium
 PRODUCT_MANUFACTURER := Sony

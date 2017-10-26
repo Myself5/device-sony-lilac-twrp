@@ -45,13 +45,13 @@ TARGET_NO_BOOTLOADER := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 lpm_levels.sleep_disabled=1 androidboot.bootdevice=1da4000.ufshc androidboot.selinux=permissive msm_rtb.filter=0x3F ehci-hcd.park=3 dwc3.maximum_speed=high dwc3_msm.prop_chg_detect=Y coherent_pool=8M sched_enable_power_aware=1 user_debug=31 androidboot.hardware=maple buildvariant=userdebug display_status=on
+BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 lpm_levels.sleep_disabled=1 androidboot.bootdevice=1da4000.ufshc androidboot.selinux=permissive msm_rtb.filter=0x3F ehci-hcd.park=3 dwc3.maximum_speed=high dwc3_msm.prop_chg_detect=Y coherent_pool=8M sched_enable_power_aware=1 user_debug=31 androidboot.hardware=lilac buildvariant=userdebug display_status=on
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
 BOARD_RAMDISK_OFFSET := 0x02000000
 TARGET_KERNEL_SOURCE := kernel/sony/msm
 TARGET_COMPILE_WITH_MSM_KERNEL := true
-TARGET_KERNEL_CONFIG := aosp_yoshino_maple_defconfig
+TARGET_KERNEL_CONFIG := aosp_yoshino_lilac_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
 # Platform
